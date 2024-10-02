@@ -1,7 +1,9 @@
+import Slider from "./components/Slider";
+
 export default function Home() {
   return (
-    <div className=" justify-center items-center flex h-screen">
-      <div className="text-black">sdfsf</div>
+    <div className="bg-teal-950">
+      <Slider />
     </div>
   );
 }
