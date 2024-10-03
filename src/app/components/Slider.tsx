@@ -117,7 +117,7 @@ const Slider = () => {
             key={slide.id}
           >
             {/* TEXT CONTAINER */}
-            <div className="h-1/2 xl:w-1/2 xl:h-full flex flex-col items-center justify-center gap-8 2xl:gap-12 text-center  px-12 ">
+            <div className="h-1/2 xl:w-1/2 xl:h-full flex flex-col items-center justify-center gap-8 2xl:gap-12 text-center  px-12 max-sm:pt-4">
               <h2 className="text-orange-400">{slide.description}</h2>
               <h1 className="text-xl lg:text-xl xl:text-4xl font-semibold text-orange-500">
                 {slide.title}
@@ -144,14 +144,14 @@ const Slider = () => {
       <div className="absolute m-auto left-1/2 bottom-8 flex gap-4  max-md:left-[30%]  max-sm:left-[15%] max-[320px]:left-[10%]">
         {slides.map((slide, index) => (
           <div
-            className={`w-3 h-3  rounded-full ring-1 ring-gray-600 cursor-pointer flex items-center justify-center ${
+            className={`w-3 h-3  rounded-full ring-1 ring-orange-600 cursor-pointer flex items-center justify-center ${
               current === index ? "scale-150" : ""
             }`}
             key={slide.id}
             onClick={() => setCurrent(index)}
           >
             {current === index && (
-              <div className="w-[6px] h-[6px] bg-gray-600 rounded-full"></div>
+              <div className="w-[6px] h-[6px] bg-orange-600 rounded-full"></div>
             )}
           </div>
         ))}
