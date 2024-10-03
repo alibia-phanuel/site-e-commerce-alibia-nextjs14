@@ -141,10 +141,10 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      <div className="absolute m-auto left-1/2 bottom-8 flex gap-4  max-md:left-[30%]  max-sm:left-[15%] max-[320px]:left-[10%]">
+      <div className="absolute m-auto left-1/2 bottom-8 max-sm:bottom-4 bg-[#000] py-2 px-4 rounded-full flex gap-4  max-md:left-[30%]  max-sm:left-[13%] max-[320px]:left-[4%]">
         {slides.map((slide, index) => (
           <div
-            className={`w-3 h-3  rounded-full ring-1 ring-orange-600 cursor-pointer flex items-center justify-center ${
+            className={`w-3 h-3  rounded-full ring-1  ring-orange-600 cursor-pointer flex items-center justify-center ${
               current === index ? "scale-150" : ""
             }`}
             key={slide.id}
