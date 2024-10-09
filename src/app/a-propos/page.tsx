@@ -74,8 +74,54 @@ export default function Propos() {
             <span className="text-orange-400 font-bold mx-2">ALIBIA</span>,
             votre destination de confiance pour tout ce qui touche à la
             technologie ! <br></br> Nous sommes spécialisés dans la vente de
-            produits high-tech de haute qualité, ,<br></br>couvrant une large
+            produits high-tech de haute qualité,<br></br>couvrant une large
             gamme de catégories pour répondre à tous vos besoins numériques.
+          </div>
+
+          <div>
+            <h1 className="text-center font-bold text-orange-400 text-[30px]">
+              Offrez les meilleurs produits technologiques à vos proches au
+              Cameroun !
+            </h1>
+
+            <div className="flex gap-4 my-[60px] max-md:flex-wrap">
+              <div className="bg-white flex justify-center items-center p-8 rounded-lg shadow-xl gap-4 border border-[#ffa23f]">
+                <div>
+                  <img src="/icons/cadeau.png" alt="cadeau" />
+                </div>
+                <p>
+                  Vous avez des proches au Cameroun et souhaitez leur faire
+                  plaisir avec des cadeaux technologiques ? Notre boutique en
+                  ligne est la solution qu’il vous faut ! Nous proposons une
+                  large gamme de produits high-tech – smartphones, ordinateurs,
+                  accessoires, objets connectés, et bien plus encore – à des
+                  prix abordables.
+                </p>
+              </div>
+              <div className="bg-white flex justify-center items-center p-8 rounded-lg shadow-xl  gap-4 border border-[#ffa23f]">
+                <div>
+                  <img src="/icons/ordre.png" alt="ordre" />
+                </div>
+                <p>
+                  Avec notre service, vous commandez en toute simplicité depuis
+                  l’étranger et vos proches reçoivent leurs cadeaux directement
+                  chez eux, avec la possibilité de payer à la livraison. C’est
+                  pratique, sécurisé et sans souci !
+                </p>
+              </div>
+              <div className="bg-white flex justify-center items-center p-8 rounded-lg shadow-xl gap-4 border border-[#ffa23f]">
+                <div>
+                  <img src="/icons/bombe-de-table.png" alt="ordre" />
+                </div>
+                <p>
+                  Que ce soit pour un anniversaire, une fête ou juste pour faire
+                  plaisir, notre boutique est là pour vous aider à surprendre
+                  vos proches avec les dernières nouveautés technologiques.
+                  Faites confiance à notre service et offrez des cadeaux qui
+                  feront vraiment plaisir !
+                </p>
+              </div>
+            </div>
           </div>
           <div className="">
             <h1 className="py-5 font-bold text-[20px] text-orange-400 ">
