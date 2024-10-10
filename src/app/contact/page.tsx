@@ -1,7 +1,20 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function contact() {
   return (
     <div className=" justify-center  flex h-screen px-4">
-      <section className="text-black mt-[100px] text-center">
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 80 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="text-black mt-[100px] text-center"
+      >
         <h2 className="text-center font-bold text-orange-400 text-[30px]">
           Contactez-nous
         </h2>
@@ -29,7 +42,7 @@ export default function contact() {
           Nous nous engageons à répondre à vos demandes dans les plus brefs
           délais. Votre satisfaction est notre priorité !
         </p>
-      </section>
+      </motion.section>
     </div>
   );
 }
