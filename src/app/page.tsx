@@ -1,17 +1,6 @@
-"use client";
 import Slider from "./components/Slider";
-// import CategoryList from "./components/CategoryList";
-// import ProductList from "./components/ProductList";
-// import Skeleton from "./components/Skeleton";
 
-// import { WixClientContext } from "./context/wixContext";
-// import { useWixClient } from "./hooks/useWixClient";
-// import { wixClientServer } from "./lib/wixClientServer";
-// import { Suspense, useContext, useEffect } from "react";
-
-export default function Home() {
-  //find All Product
-
+const Home = async () => {
   return (
     <div>
       <Slider />
@@ -23,4 +12,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;
